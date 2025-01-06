@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#E2D9BE"
+    android:padding="16dp"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/location_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Label" />
+
+    <TextView
+        android:id="@+id/location_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address" />
+
+    <TextView
+        android:id="@+id/location_latitude"
+        android:visibility= "gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude" />
+
+    <TextView
+        android:id="@+id/location_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility= "gone"
+        android:text="Longitude" />
+
+    <TextView
+        android:id="@+id/location_city"
+        android:layout_width="wrap_content"
+        android:visibility= "gone"
+        android:layout_height="wrap_content"
+        android:text="City" />
+
+    <TextView
+        android:id="@+id/location_pincode"
+        android:visibility= "gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pincode" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit"
+            android:contentDescription="Edit" />
+
+        <ImageView
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/delete"
+            android:contentDescription="Delete" />
+    </LinearLayout>
+</LinearLayout>

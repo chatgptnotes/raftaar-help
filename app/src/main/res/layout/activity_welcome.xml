@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F8EBEB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Top Illustration -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/raftaar_seva_logo"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="30dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:src="@drawable/welcome_page_image"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="50dp" />
+
+        <!-- Bold Title -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book your ride in world-class Emergency ambulances!"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"/>
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/subtitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book the nearest ambulance immediately."
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Get Started Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/getStarted"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/rightarrow"
+            android:padding="10dp"
+            android:background="@drawable/proceed_button_background"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:text="@string/let_s_get_started"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+</ScrollView>

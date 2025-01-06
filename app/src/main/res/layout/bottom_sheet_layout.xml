@@ -1,0 +1,154 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bottom_sheet_background"
+    android:padding="13dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/remove" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/book_ambulance"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="#EBB30C"
+            android:layout_marginBottom="23dp"
+            android:textStyle="bold" />
+
+        <!-- Current Location Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Location"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/current_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fetching_current_location"
+            android:padding="12dp"
+            android:background="@drawable/input_text_background"
+            android:drawableLeft="@drawable/location_symbol_yellow"
+            android:drawablePadding="10dp"
+            android:focusable="false"
+            tools:ignore="RtlHardcoded" />
+
+        <!-- Address Field -->
+        <EditText
+            android:id="@+id/longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Longitude"
+            android:padding="12dp"
+            android:background="@drawable/input_text_background" />
+
+        <EditText
+            android:id="@+id/latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Latitude"
+            android:padding="12dp"
+            android:background="@drawable/input_text_background" />
+
+        <!-- City Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <EditText
+            android:id="@+id/city_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your City"
+            android:padding="12dp"
+            android:background="@drawable/input_text_background" />
+
+        <!-- Pin Code Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pin Code"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <EditText
+            android:id="@+id/pin_code_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Pin Code"
+            android:padding="12dp"
+            android:background="@drawable/input_text_background"
+            android:inputType="number" />
+
+        <!-- Mobile Number Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/input_text_background"
+            android:gravity="center_vertical">
+
+            <!-- Country Code CountryCodePicker -->
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/country_code_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_showFlag="true"
+                app:ccp_showNameCode="false"
+                app:ccp_showFullName="false" />
+
+            <!-- Mobile Number EditText -->
+            <EditText
+                android:id="@+id/mobileNumberEditText"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:maxLength="10"
+                android:hint="Enter Mobile Number"
+                android:inputType="phone"
+                android:background="@drawable/input_text_background"
+                android:drawablePadding="10dp" />
+        </LinearLayout>
+
+        <!-- Confirm Button -->
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
