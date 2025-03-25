@@ -38,12 +38,12 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                app:passwordToggleEnabled="false">
+                android:layout_marginTop="20dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/nameFieldTextInputEditText"
                     android:layout_width="match_parent"
+                    android:textColor="@color/black"
                     android:layout_height="wrap_content"
                     android:hint="@string/enter_your_name"
                     android:background="@drawable/input_text_background"
@@ -60,6 +60,7 @@
                     android:id="@+id/mobileFieldTextInputEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:hint="@string/enter_your_mobile_number"
                     android:maxLength="10"
                     android:background="@drawable/input_text_background"
@@ -76,10 +77,19 @@
                     android:id="@+id/emailFieldTextInputEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:inputType="textEmailAddress"
                     android:hint="@string/enter_your_email"
                     android:background="@drawable/input_text_background" />
             </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/pinCodeField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Pin Code"
+                android:visibility="gone"
+                android:inputType="number" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/passwordLayout"
@@ -94,6 +104,7 @@
                     android:id="@+id/passwordField"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:inputType="textPassword"
                     android:hint="@string/password"
                     android:background="@drawable/input_text_background" />
@@ -114,6 +125,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"
                     android:hint="@string/confirm_password"
+                    android:textColor="@color/black"
                     android:background="@drawable/input_text_background" />
             </com.google.android.material.textfield.TextInputLayout>
 

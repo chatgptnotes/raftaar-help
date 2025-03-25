@@ -48,6 +48,7 @@
             android:id="@+id/search_icon"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:visibility="gone"
             android:src="@drawable/search_vector_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -80,10 +81,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-<!--        <ImageView-->
-<!--            android:layout_width="150dp"-->
-<!--            android:layout_height="150dp"-->
-<!--            android:src="@drawable/no_data_found" />-->
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/no_data_found" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -93,13 +94,13 @@
             android:paddingTop="8dp"
             android:textSize="16sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Book your First Ride"
-            android:paddingTop="4dp"
-            android:textSize="14sp"
-            android:textColor="#666" />
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Book your First Ride"-->
+<!--            android:paddingTop="4dp"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textColor="#666" />-->
     </LinearLayout>
 
     <!-- Progress Bar -->

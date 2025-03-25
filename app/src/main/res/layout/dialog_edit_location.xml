@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="10dp"
+    android:background="@android:color/white"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Location"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:gravity="center"/>
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/subtitle_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add your Favorite Location"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Radio Buttons -->
+        <RadioGroup
+            android:id="@+id/radio_group_labels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/radio_office"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🏢 Office"
+                android:textColor="#424242"/>
+
+            <RadioButton
+                android:id="@+id/radio_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🏠 Home"
+                android:textColor="#424242"/>
+
+            <RadioButton
+                android:id="@+id/radio_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📍 Other"
+                android:textColor="#424242"/>
+        </RadioGroup>
+
+        <!-- Address Input -->
+        <EditText
+            android:id="@+id/location_address_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Address"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="#000000"
+            android:background="@drawable/custom_edittext_bg"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Buttons Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textSize="14sp"
+                android:textColor="#7E57C2"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_marginEnd="12dp"/>
+
+            <TextView
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textSize="14sp"
+                android:textColor="#FF6F00"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+
+
+<!--<TextView-->
+<!--android:id="@+id/latitudeTextView"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:textColor="@color/black"-->
+<!--android:visibility= "gone"-->
+<!--android:hint="Latitude"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:textSize="16sp"-->
+<!--android:layout_marginBottom="8dp" />-->
+
+<!--<TextView-->
+<!--android:id="@+id/longitudeTextView"-->
+<!--android:textColor="@color/black"-->
+<!--android:hint="Longitude"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:visibility= "gone"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:textSize="16sp"-->
+<!--android:layout_marginBottom="8dp" />-->
+
+<!--<TextView-->
+<!--android:id="@+id/cityTextView"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:hint="City"-->
+<!--android:visibility= "gone"-->
+<!--android:textColor="@color/black"-->
+<!--android:textSize="16sp"-->
+<!--android:layout_marginBottom="8dp" />-->
+
+<!--<TextView-->
+<!--android:id="@+id/pinCodeTextView"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:hint="PinCode"-->
+<!--android:visibility= "gone"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:textSize="16sp"-->
+<!--android:textColor="@color/black"-->
+<!--android:layout_marginBottom="8dp" />-->

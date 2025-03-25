@@ -49,6 +49,7 @@
         android:text="Create a save location"
         android:textSize="14sp"
         android:textStyle="bold"
+        android:visibility="gone"
         android:textColor="#000000"
         app:layout_constraintTop_toBottomOf="@id/top_bar"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,6 +60,7 @@
     <TextView
         android:id="@+id/subtitle_text"
         android:layout_width="wrap_content"
+        android:visibility="gone"
         android:layout_height="wrap_content"
         android:text="Add frequented locations for easy access"
         android:textSize="12sp"

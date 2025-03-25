@@ -26,6 +26,7 @@
         <!-- Current Location Field -->
         <TextView
             android:layout_width="wrap_content"
+            android:textColor="@color/black"
             android:layout_height="wrap_content"
             android:text="Current Location"
             android:textSize="15sp"
@@ -34,6 +35,7 @@
         <EditText
             android:id="@+id/current_location"
             android:layout_width="match_parent"
+            android:textColor="@color/black"
             android:layout_height="wrap_content"
             android:hint="@string/fetching_current_location"
             android:padding="12dp"
@@ -46,6 +48,7 @@
         <!-- Address Field -->
         <EditText
             android:id="@+id/longitude"
+            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Your Longitude"
@@ -57,6 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Your Latitude"
+            android:textColor="@color/black"
             android:padding="12dp"
             android:background="@drawable/input_text_background" />
 
@@ -65,6 +69,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="City"
+            android:textColor="@color/black"
+            android:visibility="gone"
             android:textSize="15sp"
             android:textStyle="bold"
             android:paddingTop="16dp" />
@@ -73,7 +79,9 @@
             android:id="@+id/city_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:hint="Your City"
+            android:visibility="gone"
             android:padding="12dp"
             android:background="@drawable/input_text_background" />
 
@@ -81,8 +89,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="Pin Code"
             android:textSize="15sp"
+            android:visibility="gone"
             android:textStyle="bold"
             android:paddingTop="16dp" />
 
@@ -90,6 +100,8 @@
             android:id="@+id/pin_code_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="@color/black"
             android:hint="Your Pin Code"
             android:padding="12dp"
             android:background="@drawable/input_text_background"
@@ -99,6 +111,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="Mobile Number"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -127,6 +140,7 @@
                 android:layout_width="0dp"
                 android:layout_height="45dp"
                 android:layout_weight="1"
+                android:textColor="@color/black"
                 android:hint="Enter Mobile Number"
                 android:inputType="phone"
                 android:background="@drawable/input_text_background"

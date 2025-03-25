@@ -1,9 +1,18 @@
 <resources
     xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme -->
-    <style name="Base.Theme.SevaApp" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Disable automatic dark mode -->
+<!--    &lt;!&ndash; Base application theme &ndash;&gt;-->
+<!--    <style name="Base.Theme.SevaApp" parent="Theme.Material3.DayNight.NoActionBar">-->
+<!--        &lt;!&ndash; Disable automatic dark mode &ndash;&gt;-->
+<!--        <item name="android:forceDarkAllowed">false</item>-->
+<!--&lt;!&ndash;        &lt;!&ndash; Keep Night theme as it is without overriding &ndash;&gt;&ndash;&gt;-->
+
+<!--    </style>-->
+
+    <style name="Theme.SevaApp" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:forceDarkAllowed">false</item>
-        <!-- Keep Night theme as it is without overriding -->
+        <item name="background">@color/background</item>
+        <item name="colorOnBackground">@color/text</item>
+        <!-- Other theme attributes -->
     </style>
+
 </resources>

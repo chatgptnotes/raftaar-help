@@ -21,62 +21,40 @@
             android:layout_marginBottom="30dp"
             android:textSize="30sp" />
 
-        <!-- Name -->
-        <EditText
-            android:id="@+id/editName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/name"
-            android:inputType="textPersonName" />
-
-        <!-- Date of Birth -->
-        <EditText
-            android:id="@+id/editDob"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/date_of_birth_yyyy_mm_dd"
-            android:focusable="false"
-            android:clickable="true" />
-
         <!-- Phone -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/_91"
-                android:textSize="18sp"
-                android:gravity="center"
-                android:padding="8dp" />
-
+            <!-- Date of Birth -->
             <EditText
-                android:id="@+id/editPhone"
-                android:layout_width="0dp"
+                android:id="@+id/editDob"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:maxLength="10"
-                android:layout_weight="1"
-                android:hint="Phone"
-                android:inputType="phone" />
+                android:hint="@string/date_of_birth_yyyy_mm_dd"
+                android:focusable="false"
+                android:clickable="true" />
+
         </LinearLayout>
 
-        <!-- Email -->
-        <EditText
-            android:id="@+id/editEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Email"
-            android:inputType="textEmailAddress" />
-
         <!-- Street Address 1 -->
-        <EditText
-            android:id="@+id/editStreet1"
+<!--        <EditText-->
+<!--            android:id="@+id/editStreet1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Address"-->
+<!--            android:inputType="text" />-->
+
+        <AutoCompleteTextView
+            android:id="@+id/editCity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Address"
-            android:inputType="text" />
+            android:hint="Select City"
+            android:padding="12dp"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:dropDownHeight="wrap_content" />
 
         <!-- Pin Code -->
         <EditText
@@ -84,6 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Pin Code"
+            android:maxLength="6"
             android:inputType="number" />
 
         <!-- Save Button -->

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+<!--    &lt;!&ndash; Background Color &ndash;&gt;-->
+<!--    <solid android:color="#FFF9C4"/> &lt;!&ndash; Soft Yellow Background &ndash;&gt;-->
+
+    <!-- Rounded Corners -->
+    <corners android:radius="12dp"/>
+
+    <!-- Border -->
+    <stroke android:width="2dp" android:color="#FBC02D"/> <!-- Dark Yellow Border -->
+
+</shape>

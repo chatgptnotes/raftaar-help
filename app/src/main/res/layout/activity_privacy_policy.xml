@@ -1,0 +1,193 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8E1"
+    tools:context=".activities.PrivacyPolicyActivity">
+
+    <!-- Top Bar -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFD600"
+        android:padding="8dp"
+        android:elevation="4dp"
+        tools:ignore="MissingConstraints">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/left_arrow"
+            android:contentDescription="@string/back_button"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/privacy_policy"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/back_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/top_bar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Section: Information Collection -->
+            <TextView
+                android:id="@+id/information_collection_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/information_collection"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/information_collection_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/we_collect_personal_information_you_provide_such_as_name_email_profile_image_date_of_birth_address_city_pincode_and_mobile_number_non_personal_data_like_device_type_current_location_latitude_and_longitude_and_browsing_behavior_may_also_be_collected"
+                android:textColor="#5D4037"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Section: Use of Information -->
+            <TextView
+                android:id="@+id/use_of_information_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/use_of_information"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/use_of_information_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_data_is_used_to_provide_and_improve_our_services_process_transactions_book_rides_and_communicate_with_you_non_personal_data_helps_us_analyze_trends_and_enhance_user_experience"
+                android:textColor="#5D4037"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Section: Sharing of Information -->
+            <TextView
+                android:id="@+id/sharing_information_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sharing_of_information"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/sharing_information_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/we_do_not_sell_or_share_your_personal_data_with_third_parties_except_as_required_by_law_or_with_your_explicit_consent"
+                android:textColor="#5D4037"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Section: Data Security -->
+            <TextView
+                android:id="@+id/data_security_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/data_security"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/data_security_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/we_implement_industry_standard_measures_to_protect_your_data_from_unauthorized_access_alteration_or_disclosure"
+                android:textColor="#5D4037"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Section: Changes to Privacy Policy -->
+            <TextView
+                android:id="@+id/changes_to_policy_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/changes_to_privacy_policy"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/changes_to_policy_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/we_may_update_this_policy_periodically_continued_use_of_our_service_indicates_acceptance_of_the_revised_policy"
+                android:textColor="#5D4037"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Section: Contact Us -->
+            <TextView
+                android:id="@+id/contact_us_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/contact_us_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/for_any_questions_or_concerns_about_these_terms_or_our_privacy_practices_please_contact_us_at_privacy_yourapp_com"
+                android:textColor="#5D4037"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

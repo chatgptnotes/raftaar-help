@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/soft_blur_bg"
+    android:gravity="center">
+
+    <!-- White Card -->
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center"
+        android:elevation="12dp"
+        android:layout_centerInParent="true">
+
+        <!-- OTP Title -->
+        <TextView
+            android:id="@+id/tvOtpTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter OTP"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#444444"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- OTP Message -->
+        <TextView
+            android:id="@+id/tvOtpMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We have sent a 4-digit OTP to your registered mobile."
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- OTP Input Boxes -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/otpBox1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                style="@style/OtpBoxStyle"/>
+
+            <EditText
+                android:id="@+id/otpBox2"
+                style="@style/OtpBoxStyle"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginStart="12dp"/>
+
+            <EditText
+                android:id="@+id/otpBox3"
+                style="@style/OtpBoxStyle"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="12dp"/>
+
+            <EditText
+                android:id="@+id/otpBox4"
+                style="@style/OtpBoxStyle"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="12dp"/>
+        </LinearLayout>
+
+        <!-- Continue Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Verify OTP"
+            android:textSize="16sp"
+            android:background="@drawable/button_bg"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:elevation="6dp"/>
+
+        <!-- Resend OTP -->
+        <TextView
+            android:id="@+id/tvResendOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Didn't receive OTP? RESEND"
+            android:textSize="14sp"
+            android:textColor="#1976D2"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>

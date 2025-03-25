@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLogin"
+    android:gravity="center">
+
+    <!-- White Card -->
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center"
+        android:elevation="8dp"
+        android:layout_centerInParent="true">
+
+        <!-- Forgot Password Title -->
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#444444"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Forgot Password Message -->
+        <TextView
+            android:id="@+id/tvForgotMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No worries, we'll send you reset instructions."
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Mobile Number Input -->
+        <EditText
+            android:id="@+id/etMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@drawable/input_box_bg"
+            android:hint="Enter your mobile number"
+            android:textColorHint="@color/black"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:elevation="4dp"/>
+
+        <!-- Reset Password Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnResetPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_bg"
+            android:text="Reset Password"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:elevation="6dp"/>
+
+        <!-- Back to Login -->
+        <TextView
+            android:id="@+id/tvBackToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Back to log in"
+            android:textSize="14sp"
+            android:textColor="#1976D2"
+            android:layout_marginTop="12dp"
+            android:gravity="center"/>
+
+<!--        <ProgressBar-->
+<!--            android:id="@+id/progressBar"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:visibility="gone"/>-->
+    </LinearLayout>
+</RelativeLayout>

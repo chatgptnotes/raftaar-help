@@ -14,7 +14,7 @@
         <!-- Top Section -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="20dp"
             android:layout_weight="0.5">
 
             <ImageView
@@ -25,13 +25,12 @@
                 tools:ignore="ContentDescription" />
         </LinearLayout>
 
-
         <!-- Bottom Section -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1.5"
-            android:background="#F8EBEB"
+            android:background="@color/backgroundLogin"
             android:orientation="vertical"
             android:padding="16dp">
 
@@ -62,11 +61,11 @@
                     android:id="@+id/emailEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:inputType="textEmailAddress"
                     android:hint="@string/enter_your_email"
                     android:background="@drawable/input_text_background" />
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/passwordLayout"
@@ -74,6 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 app:endIconMode="custom"
+                android:textColor="@color/black"
                 app:endIconDrawable="@drawable/ic_eye_closed"
                 app:endIconTint="@color/black">
 
@@ -81,11 +81,24 @@
                     android:id="@+id/passwordEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:inputType="textPassword"
                     android:hint="@string/password"
                     android:background="@drawable/input_text_background" />
             </com.google.android.material.textfield.TextInputLayout>
 
+            <!-- Forgot Password Link -->
+            <TextView
+                android:id="@+id/forgetPasswordTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Forgot Password?"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <!-- Button to login -->
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/loginButton"
                 android:layout_marginTop="30dp"
@@ -127,7 +140,12 @@
                 android:textAlignment="center"
                 android:text="@string/signup" />
 
-        </LinearLayout>
+            <!-- FrameLayout for dynamic Fragment -->
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

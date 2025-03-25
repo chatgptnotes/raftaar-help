@@ -10,7 +10,6 @@
         android:id="@+id/loading_lottie"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:lottie_rawRes="@raw/your_animation_file"
         app:lottie_loop="true"
         app:lottie_autoPlay="true" />
 

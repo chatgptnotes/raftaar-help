@@ -1,19 +1,20 @@
+import io.netty.util.ReferenceCountUtil.release
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
 }
 
 android {
-    namespace = "com.example.sevaapp"
+    namespace = "com.emergency.sevaapp"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.sevaapp"
+        applicationId = "com.emergency.sevaapp"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -30,12 +31,15 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
     buildFeatures {
         viewBinding = true
     }
+
 }
 
 dependencies {
@@ -48,12 +52,13 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:2.7.0")
     implementation("com.github.bumptech.glide:glide:4.12.0")
     implementation("com.hbb20:ccp:2.5.0")
-    implementation("com.google.android.libraries.places:places:2.6.0")
+    implementation("com.google.android.libraries.places:places:3.3.0")
     implementation("com.airbnb.android:lottie:4.2.2")
     implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
     implementation("de.hdodenhof:circleimageview:3.1.0")
     implementation("com.github.f0ris.sweetalert:library:+")
+    implementation("androidx.cardview:cardview:1.0.0")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

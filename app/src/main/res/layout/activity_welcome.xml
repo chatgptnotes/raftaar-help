@@ -58,7 +58,7 @@
         <!-- Get Started Button -->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/getStarted"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="14dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableRight="@drawable/rightarrow"
@@ -68,6 +68,31 @@
             android:textColor="@color/white"
             android:text="@string/let_s_get_started"
             tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To continuing, you agree to our Terms and Conditions"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginTop="19dp" />
+
+        <!-- Error message TextView at the bottom -->
+        <TextView
+            android:id="@+id/noInternetMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seems like you are offline. Please check your connection and try again."
+            android:textColor="#ffffff"
+            android:background="#333333"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:visibility="gone"
+            android:textAlignment="center" />
 
     </LinearLayout>
 </ScrollView>

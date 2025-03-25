@@ -8,10 +8,22 @@
     <color name="WhiteColor">#FFFFFF</color>
 
     <color name="gray">#757575</color>
-    <color name="light_blue">#E3F2FD</color>
+    <color name="light_blue">#C8B615</color>
 
     <color name="colorPrimary">#FFEB3B</color>
     <color name="colorPrimaryVariant">#FFC107</color>
     <color name="colorAccent">#CDDC39</color>
     <color name="header_background">#EBE0E0</color>
+    <color name="calender_background">#2196F3</color>
+    <color name="splash_backgroud">#F8EBEB</color>
+    <color name="backgroundLogin">#F8EBEB</color>
+
+    <color name="dialog_background">#FFFFFF</color>
+    <color name="dialog_text">#000000</color>
+    <!-- colors.xml -->
+
+    <color name="background">#000000</color>
+    <color name="text">#000000</color>
+
+    <color name="highlight_color">#FFC107</color>
 </resources>

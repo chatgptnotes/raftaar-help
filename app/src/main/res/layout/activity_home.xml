@@ -16,7 +16,6 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
             <!-- Google Maps Fragment -->
             <fragment
                 android:id="@+id/map"
@@ -24,6 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:ignore="FragmentTagUsage" />
+
             <ProgressBar
                 android:id="@+id/progressBar"
                 android:layout_width="wrap_content"
@@ -55,7 +55,12 @@
                 <AutoCompleteTextView
                     android:id="@+id/search_bar"
                     android:layout_width="0dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"
+                    android:textColorHint="@color/black"
                     android:layout_height="45dp"
+                    android:textColor="@color/black"
                     android:drawableLeft="@drawable/location_symbol_yellow"
                     android:hint="@string/enter_location"
                     android:drawableRight="@drawable/heart"
@@ -69,7 +74,7 @@
                     android:layout_weight="1"
                     tools:ignore="Autofill,InefficientWeight,RtlHardcoded,TextFields" />
 
-                <de.hdodenhof.circleimageview.CircleImageView
+                <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/get_current_location"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
@@ -103,7 +108,6 @@
                     android:padding="12dp"
                     android:backgroundTint="@color/black"
                     android:textColor="@color/white" />
-
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>
@@ -111,13 +115,92 @@
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
+        app:itemTextColor="@color/black"
         android:layout_height="match_parent"
+        app:itemIconTint="@color/black"
         android:layout_gravity="start"
-        android:fitsSystemWindows="true"
-        app:drawerLayoutCornerSize="20dp"
+        app:menu="@menu/drawer_menu"
         app:headerLayout="@layout/nav_header"
-        app:menu="@menu/drawer_menu"/>
+        android:background="@color/white">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:layout_marginTop="200dp"
+                android:background="#83CBEAF8"
+                android:padding="10dp"
+                android:gravity="center">
+
+                <!-- Follow Us Text -->
+                <TextView
+                    android:id="@+id/follow_us_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Follow Us On"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Social Media Icons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/facebook_link"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/facebook"
+                        android:layout_marginHorizontal="5dp"
+                        android:contentDescription="Facebook Link" />
+
+                    <ImageView
+                        android:id="@+id/twitter_link"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/twitter"
+                        android:layout_marginHorizontal="5dp"
+                        android:contentDescription="Twitter Link" />
+
+                    <ImageView
+                        android:id="@+id/youtube_link"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/youtube"
+                        android:layout_marginHorizontal="5dp"
+                        android:contentDescription="YouTube Link" />
+
+                    <ImageView
+                        android:id="@+id/instagram_link"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/instagram"
+                        android:layout_marginHorizontal="5dp"
+                        android:contentDescription="Instagram Link" />
+                </LinearLayout>
+
+                <!-- Version Text -->
+                <TextView
+                    android:id="@+id/version_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Version: 1.0"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.google.android.material.navigation.NavigationView>
 </androidx.drawerlayout.widget.DrawerLayout>
-

@@ -1,71 +1,86 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:background="#E2D9BE"
-    android:padding="16dp"
-    android:layout_marginBottom="10dp">
-
-    <TextView
-        android:id="@+id/location_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:text="Label" />
-
-    <TextView
-        android:id="@+id/location_address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Address" />
-
-    <TextView
-        android:id="@+id/location_latitude"
-        android:visibility= "gone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Latitude" />
-
-    <TextView
-        android:id="@+id/location_longitude"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility= "gone"
-        android:text="Longitude" />
-
-    <TextView
-        android:id="@+id/location_city"
-        android:layout_width="wrap_content"
-        android:visibility= "gone"
-        android:layout_height="wrap_content"
-        android:text="City" />
-
-    <TextView
-        android:id="@+id/location_pincode"
-        android:visibility= "gone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pincode" />
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="30dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp"
+    app:cardBackgroundColor="#FFF9C4"> <!-- Light Yellow Background -->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="8dp">
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <ImageView
-            android:id="@+id/edit_button"
+        <!-- Location Label -->
+        <TextView
+            android:id="@+id/location_label"
+            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/edit"
-            android:contentDescription="Edit" />
+            android:text="Label"
+            android:layout_marginBottom="15dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#212121"/> <!-- Dark Gray -->
 
-        <ImageView
-            android:id="@+id/delete_button"
+        <!-- Address -->
+        <TextView
+            android:id="@+id/location_address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:src="@drawable/delete"
-            android:contentDescription="Delete" />
+            android:text="Address"
+            android:textSize="14sp"
+            android:textColor="#424242" /> <!-- Medium Gray -->
+
+        <!-- Hidden Fields (Latitude, Longitude, City, Pincode) -->
+        <TextView android:id="@+id/location_latitude"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/location_longitude"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/location_city"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/location_pincode"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:visibility="gone"
+            android:paddingTop="8dp">
+
+            <ImageView
+                android:id="@+id/edit_button"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/edit"
+                android:tint="#000000"
+
+                android:padding="4dp"/>
+
+            <ImageView
+                android:id="@+id/delete_button"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:padding="4dp"
+                android:src="@drawable/delete_icon"
+                android:tint="#D32F2F" />
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+</androidx.cardview.widget.CardView>

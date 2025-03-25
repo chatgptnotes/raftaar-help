@@ -7,11 +7,9 @@
     <string name="my_rides">My Rides</string>
     <string name="save_locations">Save Locations</string>
     <string name="terms_and_condition">Terms and Condition</string>
-    <string name="settings">Settings</string>
     <string name="logout">Logout</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
@@ -39,7 +37,7 @@
     <string name="proceed">Proceed</string>
     <string name="or">Or</string>
     <string name="signup">Signup</string>
-    <string name="this_email_will_be_used_for_all_ride_related_ncommunication_you_shall_receive_an_mail_with_code_verification">This email will be used for all ride-related \ncommunication. You shall receive an mail with code verification.</string>
+    <string name="this_email_will_be_used_for_all_ride_related_ncommunication_you_shall_receive_an_mail_with_code_verification">This email will be used for all ride-related \ncommunication. Stay tuned for updates.</string>
     <string name="let_s_get_started">Let’s get started</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="search">Search</string>
@@ -52,6 +50,7 @@
     <string name="mobile_number">Mobile Number</string>
     <string name="email_icon">Email Icon</string>
     <string name="email">Email</string>
+
     <string name="city_icon">City Icon</string>
     <string name="city">City</string>
     <string name="edit_profile">Edit Profile</string>
@@ -73,4 +72,38 @@
     <string name="delete_ride">Delete Ride</string>
     <string name="fetching_current_location" tools:ignore="TypographyEllipsis">Fetching current location...</string>
     <string name="pinCode">Pincode</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="privacy_policies">Privacy Policy</string>
+    <string name="share">Share</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="we_collect_personal_information_you_provide_such_as_name_email_profile_image_date_of_birth_address_city_pincode_and_mobile_number_non_personal_data_like_device_type_current_location_latitude_and_longitude_and_browsing_behavior_may_also_be_collected">We collect personal information you provide, such as name, email, profile image, date of birth, address, city, pincode, and mobile number. Non-personal data like device type, current location (latitude and longitude), and browsing behavior may also be collected.</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="information_collection">Information Collection</string>
+    <string name="use_of_information">Use of Information</string>
+    <string name="personal_data_is_used_to_provide_and_improve_our_services_process_transactions_book_rides_and_communicate_with_you_non_personal_data_helps_us_analyze_trends_and_enhance_user_experience">Personal data is used to provide and improve our services, process transactions, book rides, and communicate with you. Non-personal data helps us analyze trends and enhance user experience.</string>
+    <string name="sharing_of_information">Sharing of Information</string>
+    <string name="we_do_not_sell_or_share_your_personal_data_with_third_parties_except_as_required_by_law_or_with_your_explicit_consent">We do not sell or share your personal data with third parties, except as required by law or with your explicit consent.</string>
+    <string name="data_security">Data Security</string>
+    <string name="we_implement_industry_standard_measures_to_protect_your_data_from_unauthorized_access_alteration_or_disclosure">We implement industry-standard measures to protect your data from unauthorized access, alteration, or disclosure.</string>
+    <string name="changes_to_privacy_policy">Changes to Privacy Policy</string>
+    <string name="we_may_update_this_policy_periodically_continued_use_of_our_service_indicates_acceptance_of_the_revised_policy">We may update this policy periodically. Continued use of our service indicates acceptance of the revised policy.</string>
+    <string name="for_any_questions_or_concerns_about_these_terms_or_our_privacy_practices_please_contact_us_at_privacy_yourapp_com">For any questions or concerns about these terms or our privacy practices, please contact us at instaaid@emergencyseva.ai.</string>
+    <string name="contact_illustration">Contact Illustration</string>
+    <string name="support_hours_24x7">Support Hours: 24x7</string>
+    <string name="_18002330000">18002330000</string>
+    <string name="emailid">instaaid@emergencyseva.ai</string>
+    <string name="nagpur_office">Nagpur Office</string>
+    <string name="emergency_seva_office_is_at_701_casa_royal_apartment_mohan_nagar_nagpur">701, Casa royal apartment, Mohan nagar, Nagpur</string>
+    <string name="web">Web</string>
+    <string name="website">emergencyseva.ai</string>
+    <string name="address">Address</string>
+    <string name="delete_your_account">Delete Your Account</string>
+    <string name="please_enter_your_registered_email_to_reset_the_password">Please enter your registered email to reset the password</string>
+    <string name="your_email">Your Email</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="select_your_location_type">Select your location type</string>
+    <string name="enter_registered_mobile_number">Enter Registered Mobile Number</string>
+    <string name="new_password">New Password</string>
+    <string name="set_new_password">Set New Password</string>
 </resources>
