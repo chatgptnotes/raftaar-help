@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <network-security-config>
     <domain-config cleartextTrafficPermitted="true">
-        <domain includeSubdomains="true">demo.bachao.co</domain>
+        <domain includeSubdomains="true">admin.emergencyseva.in</domain>
         <trust-anchors>
             <certificates src="system" />
         </trust-anchors>

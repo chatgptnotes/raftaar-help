@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "9259718484",
+    "project_id": "raftaar-501a7",
+    "storage_bucket": "raftaar-501a7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9259718484:android:0871fc57124d1be8719ac1",
+        "android_client_info": {
+          "package_name": "com.raftaar.emergencyy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHVGhFvcotOiV6rvP7psQhQqYMs9CcwzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9259718484:android:48637d4a58c3f96b719ac1",
+        "android_client_info": {
+          "package_name": "com.raftar.help"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHVGhFvcotOiV6rvP7psQhQqYMs9CcwzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

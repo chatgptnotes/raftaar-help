@@ -1,18 +1,36 @@
-<resources
-    xmlns:tools="http://schemas.android.com/tools">
-<!--    &lt;!&ndash; Base application theme &ndash;&gt;-->
-<!--    <style name="Base.Theme.SevaApp" parent="Theme.Material3.DayNight.NoActionBar">-->
-<!--        &lt;!&ndash; Disable automatic dark mode &ndash;&gt;-->
-<!--        <item name="android:forceDarkAllowed">false</item>-->
-<!--&lt;!&ndash;        &lt;!&ndash; Keep Night theme as it is without overriding &ndash;&gt;&ndash;&gt;-->
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.SevaApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand colors -->
+        <item name="colorPrimary">@color/primary_dark</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <!-- Secondary brand colors -->
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/primary</item>
+        
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
 
-<!--    </style>-->
+        <!-- Material 3 attributes -->
+        <item name="materialCardViewStyle">@style/Widget.Material3.CardView.Elevated</item>
+        <item name="materialButtonStyle">@style/Widget.Material3.Button</item>
 
-    <style name="Theme.SevaApp" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="android:forceDarkAllowed">false</item>
-        <item name="background">@color/background</item>
-        <item name="colorOnBackground">@color/text</item>
-        <!-- Other theme attributes -->
+        <!-- Disable force dark mode -->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
     </style>
 
+    <style name="Theme.SevaApp" parent="Base.Theme.SevaApp" />
 </resources>

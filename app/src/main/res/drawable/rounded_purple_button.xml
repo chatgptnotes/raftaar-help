@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#7C5CBF"/> <!-- पर्पल कलर, आप अपनी थीम के अनुसार बदल सकते हैं -->
+    <corners android:radius="12dp"/> <!-- गोल कोने -->
+</shape>

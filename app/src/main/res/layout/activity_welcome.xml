@@ -93,6 +93,5 @@
             android:padding="16dp"
             android:visibility="gone"
             android:textAlignment="center" />
-
     </LinearLayout>
 </ScrollView>

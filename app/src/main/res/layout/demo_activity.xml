@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header with Icon -->
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_location_pin"
+            app:tint="#ED8F03"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add your Favorite Location"
+            android:textColor="#222222"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/subtitle_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_your_location_type"
+            android:textColor="#757575"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Radio Buttons in Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_group_background"
+            android:padding="8dp"
+            android:layout_marginBottom="20dp">
+
+            <RadioGroup
+                android:id="@+id/radio_group_labels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <RadioButton
+                    android:id="@+id/address_1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="🏠 Home"
+                    android:textSize="15sp"
+                    android:textColor="#424242"
+                    android:padding="8dp"
+                    android:background="@drawable/radio_button_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:layout_margin="4dp"/>
+
+                <RadioButton
+                    android:id="@+id/address_2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="🏢 Office"
+                    android:textSize="15sp"
+                    android:textColor="#424242"
+                    android:padding="8dp"
+                    android:background="@drawable/radio_button_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:layout_margin="4dp"/>
+
+                <RadioButton
+                    android:id="@+id/address_3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="📍 Other"
+                    android:textSize="15sp"
+                    android:textColor="#424242"
+                    android:padding="8dp"
+                    android:background="@drawable/radio_button_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:layout_margin="4dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Address Input -->
+        <EditText
+            android:id="@+id/location_address_current"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:hint="Enter Address"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Extra Location Details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@drawable/details_background"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/latitudeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_location_pin"
+                android:drawablePadding="12dp"
+                android:hint="Latitude"
+                android:textColor="#424242"
+                android:textSize="14sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/longitudeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_location_pin"
+                android:drawablePadding="12dp"
+                android:hint="Longitude"
+                android:textColor="#424242"
+                android:textSize="14sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/cityTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_city"
+                android:drawablePadding="12dp"
+                android:hint="City"
+                android:textColor="#424242"
+                android:textSize="14sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/pinCodeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_pin"
+                android:drawablePadding="12dp"
+                android:hint="Pin Code"
+                android:textColor="#424242"
+                android:textSize="14sp"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:background="@drawable/button_cancel_bg"
+                android:textColor="#757575"
+                android:layout_marginEnd="12dp"/>
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:background="@drawable/button_save_bg"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

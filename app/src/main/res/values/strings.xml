@@ -106,4 +106,5 @@
     <string name="enter_registered_mobile_number">Enter Registered Mobile Number</string>
     <string name="new_password">New Password</string>
     <string name="set_new_password">Set New Password</string>
+    <string name="emergency_call_icon">Emergency Call Icon</string>
 </resources>

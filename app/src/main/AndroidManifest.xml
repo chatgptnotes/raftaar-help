@@ -8,13 +8,14 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.CAMERA"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.CALL_PHONE"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
 
     <application
         android:allowBackup="true"
@@ -28,6 +29,26 @@
         android:theme="@style/Theme.SevaApp"
         tools:replace="icon"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/raftaar_seva_logo" />
+
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/material_dynamic_primary20" />
+
+        <service
+            android:name=".receiver.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
         <activity
             android:name=".activities.ResetPasswordActivity"
             android:exported="false" />
@@ -38,11 +59,13 @@
             android:name=".activities.ForgetPasswordActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".activities.DemoPage"
+            android:exported="false" />
         <receiver
             android:name=".receiver.BootReceiver"
             android:enabled="true"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
@@ -52,28 +75,33 @@
             android:name=".receiver.WeeklyNotificationReceiver"
             android:enabled="true"
             android:exported="true" />
+        <activity android:name=".activities.PrivacyPolicyActivity"
+            android:exported="false"/>
 
-        <activity
-            android:name=".activities.PrivacyPolicyActivity"
-            android:exported="false" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCFpPr4-VEcfSMMT5CeH8DlQbjErz6yORk" /> <!-- API key for Google Maps, or similar services -->
-        <activity
-            android:name=".activities.SplashActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+<!--        <activity-->
+<!--            android:name=".activities.SplashActivity"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
         <activity
             android:name=".activities.ContactUsActivity"
             android:exported="false" />
         <activity
             android:name=".activities.TermConditionActivity"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".activities.TermActivity"
             android:exported="false" />
         <activity
             android:name=".activities.SaveLocationActivity"
@@ -96,9 +124,18 @@
         <activity
             android:name=".activities.WelcomeActivity"
             android:exported="false" />
+
         <activity
             android:name=".activities.LocationPermissionActivity"
             android:exported="false" />
-    </application>
 
+        <activity
+            android:name=".activities.EmergencyAssistanceActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
 </manifest>
