@@ -88,8 +88,8 @@ class EmergencyAssistanceActivity : AppCompatActivity() {
     private fun setupClickListeners() {
         // SOS Button
         sosButton.setOnClickListener {
-            // Redirect to bachaobachao.in
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://bachaobachao.in"))
+            // Redirect to emergency seva website
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://admin.emergencyseva.in/public/emergency-sewa"))
             startActivity(intent)
         }
 
@@ -103,7 +103,7 @@ class EmergencyAssistanceActivity : AppCompatActivity() {
         }
 
         emergencyDirectoryCard.setOnClickListener {
-            // TODO: Navigate to Emergency Directory
+            startActivity(Intent(this, EmergencyDirectoryActivity::class.java))
         }
 
         myProfileCard.setOnClickListener {
